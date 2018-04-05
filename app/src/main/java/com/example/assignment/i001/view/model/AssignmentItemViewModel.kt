@@ -1,4 +1,4 @@
-package com.example.assignment.i001.View.model
+package com.example.assignment.i001.view.model
 
 import android.content.Context
 

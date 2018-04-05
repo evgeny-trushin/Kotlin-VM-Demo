@@ -6,7 +6,7 @@
 
         <variable
             name="ViewModel"
-            type="com.example.assignment.i001.View.model.AssignmentItemViewModel"/>
+            type="com.example.assignment.i001.view.model.AssignmentItemViewModel"/>
     </data>
     <TextView
         android:id="@+id/textView"

@@ -1,4 +1,4 @@
-package com.example.assignment.i001.View.adapter
+package com.example.assignment.i001.view.adapter
 
 import android.content.Context
 import android.databinding.DataBindingUtil
@@ -12,9 +12,9 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.example.assignment.helpers.AbstractPagerAdapter
 import com.example.assignment.helpers.AbstractRecyclerViewAdapter
-import com.example.assignment.i001.View.activity.AssignmentActivity
+import com.example.assignment.i001.view.activity.AssignmentActivity
 import com.example.assignment.i001.R
-import com.example.assignment.i001.View.model.AssignmentItemViewModel
+import com.example.assignment.i001.view.model.AssignmentItemViewModel
 import com.example.assignment.i001.databinding.ItemBinding
 import com.example.assignment.i001.databinding.SimpleFragmentBinding
 

@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.assignment.i001.View.adapter.SimpleFragment;
+import com.example.assignment.i001.view.adapter.SimpleFragment;
 
 import java.util.List;
 

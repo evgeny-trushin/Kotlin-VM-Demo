@@ -7,6 +7,7 @@ android {
     dataBinding {
         enabled = true
     }
+    flavorDimensions "default"
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.example.assignment.i001"
@@ -22,6 +23,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+        RELEASE {
+            applicationId "com.example.assignment.i001.release"
+        }
+
+        DEBUG {
+            applicationId "com.example.assignment.i001.debug"
+        }
+    }
+
 }
 
 dependencies {

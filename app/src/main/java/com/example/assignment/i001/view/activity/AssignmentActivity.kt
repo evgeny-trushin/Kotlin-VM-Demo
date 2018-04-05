@@ -1,4 +1,4 @@
-package com.example.assignment.i001.View.activity
+package com.example.assignment.i001.view.activity
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
@@ -9,7 +9,7 @@ import android.support.v4.view.ViewPager
 import android.view.View
 import com.example.assignment.helpers.ViewPagerModified
 import com.example.assignment.i001.R
-import com.example.assignment.i001.View.model.AssignmentActivityViewModel
+import com.example.assignment.i001.view.model.AssignmentActivityViewModel
 
 
 class AssignmentActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.assignment.i001.View.model
+package com.example.assignment.i001.view.model
 
 
 import android.content.Context
@@ -7,9 +7,9 @@ import android.support.v4.app.FragmentManager
 
 import java.io.Serializable
 import android.os.Parcelable
-import com.example.assignment.i001.View.activity.AssignmentActivity
-import com.example.assignment.i001.View.adapter.SimpleRecyclerViewAdapter
-import com.example.assignment.i001.View.adapter.SimpleViewPager
+import com.example.assignment.i001.view.activity.AssignmentActivity
+import com.example.assignment.i001.view.adapter.SimpleRecyclerViewAdapter
+import com.example.assignment.i001.view.adapter.SimpleViewPager
 
 
 class AssignmentActivityViewModel(
