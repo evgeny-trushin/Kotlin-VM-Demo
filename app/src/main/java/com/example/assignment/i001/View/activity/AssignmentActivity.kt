@@ -16,7 +16,7 @@ class AssignmentActivity : AppCompatActivity() {
     private var mBind: ActivityAssignmentBinding? = null
     var viewModel = AssignmentActivityViewModel(
             "Test", arrayListOf("Item 1", "Item 2", "Item 3", "Item 4", "Item 5"), supportFragmentManager,
-            R.color.white_color, 4
+            R.color.colorWhite, 4
     )
     private val mStateKey = "STATE"
 
