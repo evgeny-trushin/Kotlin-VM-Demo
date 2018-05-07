@@ -14,7 +14,7 @@ public abstract class AbstractRecyclerViewAdapter<TypeOfItems, GenericAdapter ex
     private Integer mNextPreLoadItem = null;
     private int mPreviousPosition = 0;
 
-    public AbstractRecyclerViewAdapter(Context context, List<TypeOfItems> items) {
+    public AbstractRecyclerViewAdapter(List<TypeOfItems> items) {
         super(items);
     }
 

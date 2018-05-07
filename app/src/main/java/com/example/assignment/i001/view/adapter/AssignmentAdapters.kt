@@ -1,6 +1,5 @@
 package com.example.assignment.i001.view.adapter
 
-import android.content.Context
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -28,11 +27,11 @@ class SimpleViewPager(
         return bundleClone
     }
 
-    override fun getItemFromBundle(bundle: Bundle) = bundle.getString(BUNDLE_KEY, "0")
+    override fun getItemFromBundle(bundle: Bundle):String = bundle.getString(BUNDLE_KEY, "0")
 }
 
-class SimpleRecyclerViewAdapter(context: Context?, items: MutableList<String>?) :
-        AbstractRecyclerViewAdapter<String, RecyclerView.ViewHolder, Void>(context, items) {
+class SimpleRecyclerViewAdapter(items: List<String>?) :
+        AbstractRecyclerViewAdapter<String, RecyclerView.ViewHolder, Void>(items) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return CardHolder(LayoutInflater.from(parent.context)
                 .inflate(R.layout.item, parent, false))
@@ -43,9 +42,10 @@ class SimpleRecyclerViewAdapter(context: Context?, items: MutableList<String>?) 
             run {
                 val vm = (context as AssignmentActivity).viewModel
                 vm.text = text
-                context.bindViewModel(vm)
+                context.bindViewModel(vm, saveState = true)
             }
         })
+        holder.bind?.executePendingBindings()
     }
 }
 
@@ -62,6 +62,7 @@ class SimpleFragment : Fragment() {
                 Toast.makeText(context, text, Toast.LENGTH_SHORT).show()
             }
         })
+        bind.executePendingBindings()
         return bind.root
     }
 
