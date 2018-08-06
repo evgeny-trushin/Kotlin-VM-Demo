@@ -20,7 +20,7 @@ data class AssignmentActivityViewModel(
         var color: Int,
         private val fragmentNumbers: Int
 ) : Serializable {
-    var mViewPagerState: Parcelable? = null
+    @Transient var mViewPagerState: Parcelable? = null
     fun getBackgroundColor(context: Context) = context.resources.getColor(color)
     fun clickOnButton(context: Context, color: Int) {
         val viewModel = (context as AssignmentActivity).viewModel
